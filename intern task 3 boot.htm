@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Players Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            border: 2px solid #f08080; /* Coral */
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+        .gallery-item p {
+            padding: 15px;
+            text-align: justify;
+            color: #555; /* Dark gray */
+        }
+        h1, p {
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Football Players Gallery</h1>
+        <p>Welcome to our football players gallery. Here we feature three outstanding athletes who have made significant contributions to the sport. Player 1 is known for his exceptional speed and agility on the field. Player 2 has a reputation for his strategic playmaking and leadership qualities. Player 3, with his incredible scoring ability, has become a fan favorite. Explore their images and learn more about their careers and achievements.</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="player1.jpg" alt="Football Player 1">
+                <p>Lionel Andrés "Leo" Messi (born 24 June 1987) is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. Messi has won a record eight Ballon d'Or awards and six European Golden Shoes. He is widely regarded as one of the greatest players of all time.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="player2.jpg" alt="Football Player 2">
+                <p>Cristiano Ronaldo dos Santos Aveiro GOIH ComM (born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains Saudi Pro League club Al Nassr and the Portugal national team. Ronaldo has won five Ballon d'Or awards and is considered one of the greatest players of all time.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="player3.jpg" alt="Football Player 3">
+                <p>Eden Hazard is a Belgian professional footballer who plays as a winger or attacking midfielder for Real Madrid and the Belgium national team. Hazard has a successful career, winning several trophies including the Premier League and La Liga.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
